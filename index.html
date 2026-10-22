@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite das Pechinchas | Grupos e Garimpos</title>
+  <meta name="description" content="Acesse os grupos da Elite das Pechinchas e confira nosso site de garimpos, ofertas e cupons.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Elite das Pechinchas | Grupos e Garimpos">
+  <meta property="og:description" content="Acesse os grupos da Elite das Pechinchas e confira nosso site de garimpos, ofertas e cupons.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Titles) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Gold Light & Subtle Grid Background -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <div class="page-wrapper">
+    <!-- HERO / TOPO -->
+    <header class="hero-section" id="topo">
+      <div class="logo-wrapper">
+        <div class="logo-frame" id="logo-container">
+          <img
+            id="brand-logo"
+            src="assets/logo.png"
+            alt="Logo Elite das Pechinchas"
+            width="120"
+            height="120"
+            class="brand-logo"
+          >
+          <div id="logo-fallback" class="logo-fallback" aria-hidden="true" style="display: none;">
+            <span>EP</span>
+          </div>
+        </div>
+        <!-- Pequeno detalhe dourado decorativo junto à logo -->
+        <div class="logo-badge-ornament" title="Elite das Pechinchas" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Selo pequeno -->
+      <div class="pill-badge" id="hero-badge">
+        Grupos gratuitos de ofertas
+      </div>
+
+      <!-- Título principal -->
+      <h1 class="hero-title" id="hero-title">
+        Elite das Pechinchas
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero-subtitle" id="hero-subtitle">
+        Promoções, cupons e garimpos para você economizar.
+      </p>
+
+      <!-- Ações do Hero -->
+      <div class="hero-actions">
+        <a href="#grupos" class="btn btn-primary btn-hero" id="hero-btn-groups">
+          Ver grupos disponíveis
+        </a>
+        <div id="hero-site-link-container" class="hero-site-link-container">
+          <!-- Renderizado via JavaScript caso siteUrl esteja preenchido -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO DE GRUPOS -->
+      <section class="section-block" id="grupos" aria-labelledby="heading-grupos">
+        <h2 class="section-title" id="heading-grupos">
+          Escolha seu grupo
+        </h2>
+
+        <div class="groups-category-label" id="groups-label">
+          OFERTAS
+        </div>
+
+        <!-- Lista dinâmica de grupos de WhatsApp -->
+        <div class="groups-container" id="groups-list" role="feed" aria-label="Grupos de ofertas disponíveis">
+          <!-- Inserido dinamicamente via app.js -->
+        </div>
+
+        <!-- SEÇÃO / CARD DO SITE DE GARIMPOS -->
+        <div class="showcase-card" id="site-garimpos-card">
+          <div class="showcase-content">
+            <div class="showcase-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                <path d="M3 6h18"></path>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div class="showcase-text">
+              <h3 class="showcase-title">Explore nosso site de garimpos</h3>
+              <p class="showcase-desc">Acesse o site e confira os garimpos publicados.</p>
+            </div>
+          </div>
+          <div class="showcase-action" id="showcase-action-container">
+            <!-- Botão inserido via app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO BENEFÍCIOS -->
+      <section class="section-block" id="beneficios" aria-labelledby="heading-beneficios">
+        <h2 class="section-title" id="heading-beneficios">
+          Por que acompanhar?
+        </h2>
+
+        <div class="benefits-grid" id="benefits-grid">
+          <!-- Card 1 -->
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Ofertas selecionadas</h3>
+            <p class="benefit-desc">Garimpos e cupons reunidos em um só lugar.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Você escolhe</h3>
+            <p class="benefit-desc">Entre nos grupos que combinam com seus interesses.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Direto no WhatsApp</h3>
+            <p class="benefit-desc">Acompanhe as publicações pelo aplicativo que você já usa.</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Site de garimpos</h3>
+            <p class="benefit-desc">Outra forma de conferir as ofertas publicadas.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SEÇÃO LOJAS / MARKETPLACES (CONFIGURÁVEL - OCULTA SE VAZIA) -->
+      <section class="section-block stores-section" id="lojas-section" aria-labelledby="heading-lojas" style="display: none;">
+        <h2 class="section-title section-title-sm" id="heading-lojas">
+          Lojas que aparecem por aqui
+        </h2>
+        <div class="stores-container" id="stores-list">
+          <!-- Inserido dinamicamente via app.js -->
+        </div>
+      </section>
+
+      <!-- SEÇÃO PERGUNTAS FREQUENTES -->
+      <section class="section-block" id="faq" aria-labelledby="heading-faq">
+        <h2 class="section-title" id="heading-faq">
+          Perguntas frequentes
+        </h2>
+
+        <div class="faq-container" id="faq-list">
+          <!-- Accordions dinâmicos acessíveis via app.js -->
+        </div>
+      </section>
+
+      <!-- SEÇÃO CHAMADA FINAL -->
+      <section class="final-cta-section" id="chamada-final">
+        <div class="final-cta-card">
+          <h2 class="final-cta-title">
+            Pronto para acompanhar os garimpos?
+          </h2>
+          <p class="final-cta-desc">
+            Entre no grupo ou visite o site para conferir as ofertas.
+          </p>
+
+          <div class="final-cta-actions">
+            <div id="final-cta-primary-container">
+              <!-- Botão principal apontando para o grupo principal -->
+            </div>
+            <div id="final-cta-secondary-container" class="final-cta-secondary-container">
+              <!-- Link secundário para o site de garimpos se siteUrl válido -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <div class="footer-brand" id="footer-brand-name">
+        Elite das Pechinchas
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Elite das Pechinchas. Todos os direitos reservados.
+      </p>
+      <div class="footer-disclaimers">
+        <p>Alguns links podem gerar comissão para nós, sem custo adicional para você.</p>
+        <p>Preços e disponibilidade são definidos pelas lojas e podem mudar.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Configuração & Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
