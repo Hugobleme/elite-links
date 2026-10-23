@@ -138,7 +138,9 @@
     }
 
     container.innerHTML = groups.map(function (group) {
-      const initial = (group.name || 'E').trim().charAt(0).toUpperCase();
+      const avatarContent = (group.icon && typeof group.icon === 'string')
+        ? group.icon
+        : (group.name || 'E').trim().charAt(0).toUpperCase();
       const hasValidUrl = isValidHttpUrl(group.url);
 
       const actionHtml = hasValidUrl
@@ -156,7 +158,7 @@
       return `
         <article class="group-card" id="card-group-${group.id || 'item'}">
           <div class="group-info-wrapper">
-            <div class="group-avatar" aria-hidden="true">${escapeHtml(initial)}</div>
+            <div class="group-avatar" aria-hidden="true">${escapeHtml(avatarContent)}</div>
             <div class="group-text">
               <div class="group-title-row">
                 <h3 class="group-name">${escapeHtml(group.name)}</h3>
